@@ -1,6 +1,6 @@
 # **kwargs
 def resultado_f1(**podium):
-    for posicao, piloto in podium.item():
+    for posicao, piloto in podium.items():
         print(f'{posicao} -> {piloto}')
 
 

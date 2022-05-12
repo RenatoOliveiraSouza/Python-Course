@@ -1,0 +1,17 @@
+from app.utils.gerador import novo_nome
+from app.negocio import nome_existe
+from app.negocio.backend import add_nome
+
+def main():
+    while True:
+        nome = novo_nome()
+        if not nome_existe(nome):
+            add_nome(nome)
+            #add_nome nao precisa fazer nada
+            break
+
+    print(f'Criado novo nome testes: "{nome}"')
+
+
+main()
+

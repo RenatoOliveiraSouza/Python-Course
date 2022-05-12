@@ -1,5 +1,5 @@
 def age_group(age):
-    if 0<= age <18:
+    if 0 <= age < 18:
         return 'Minor'
     elif age in range(18, 64):
         return 'Adult'
@@ -9,7 +9,6 @@ def age_group(age):
         return 'Centenary'
     else:
         return 'Invalid age'
-
 
 
 if __name__ == '__main__':
